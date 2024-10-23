@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00e2ff; /* Blue ocean background */
+    color: white;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* Enable snapping effect */
+}
+
+.card {
+    background-color: #005f7f; /* Card color */
+    border-radius: 20px;
+    margin-right: 30px;
+    padding: 30px; /* Meningkatkan padding menjadi 2 kali lipat */
+    width: 500px; /* Meningkatkan width menjadi 2 kali lipat */
+    height: auto; /* Allow height to adjust */
+    transition: transform 0.3s;
+    scroll-snap-align: start; /* Align cards */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    color: white; /* Change text color to white */
+}
+
+.student-image {
+    width: 110%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.student-video {
+    width: 110%; /* Full width */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 10px; /* Space between image and video */
+}
+
+.card:hover {
+    transform: scale(1.1); /* Expand card on hover */
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.audio-container {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: center; /* Memposisikan konten di tengah secara horizontal */
+    margin-top: 10px; /* Ruang antara elemen lain dan audio */
+}
+
